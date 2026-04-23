@@ -542,12 +542,14 @@ nav{
     gap: 10px;
     border-radius: 8px;
     background: var(--Text, #222);
+    transition: all linear .3s;
 }
 .about-buttom .ab-btn .ab-dot{
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background: var(--white, #FFF);
+    transition: all linear .3s;
 }
 .about-buttom .ab-btn .ab-text a{
     color: var(--white, #FFF);
@@ -558,6 +560,16 @@ nav{
     line-height: 20.8px; /* 130% */
     letter-spacing: -0.32px;
     text-transform: uppercase;
+    transition: all linear .3s;
+}
+.about-buttom .ab-btn:hover{
+    background: #FFF;
+}
+.about-buttom .ab-btn:hover a{
+    color: #000;
+}
+.about-buttom .ab-btn:hover .ab-dot{
+    background: #000;
 }
 .ab-down{
     display: flex;
@@ -575,7 +587,7 @@ nav{
 }
 .ab-down .about-right .ab-card-bottom{
     display: flex;
-    max-width: 300px;
+    max-width: 305px;
     padding: 16px;
     justify-content: center;
     gap: 40px;
