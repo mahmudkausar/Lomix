@@ -40,6 +40,7 @@ a{
     background-color: #F5F5F5;
     margin: 0 auto;
     position: fixed;
+    z-index: 9999;
 }
 
 .nav-main{
@@ -97,6 +98,7 @@ nav{
     background: transparent;
     position: fixed;
     width: 98.4vw;
+    z-index: 9999;
 }
 
 .nav-main .btn{
