@@ -842,7 +842,7 @@ nav{
     transition: all linear .3s;
 }
 #protfolio-part .protfolio-bottom .prot-card .prot-top .prot-r img{
-   width: 24px;
+    width: 24px;
     height: 24px;
     flex-shrink: 0;
     aspect-ratio: 1/1;
@@ -1107,6 +1107,251 @@ nav{
     letter-spacing: -1px;
     text-transform: uppercase;
 }
+/* ========================================================= */
+#team-part{
+    padding: 100px 62px;
+}
+#team-part .team-wrapper{
+    width: 100%;
+
+}
+#team-part .team-wrapper .team-top {
+    display: flex;
+    align-items: center;
+    gap: 144px;
+    justify-content: start;
+    margin-left: 240px;
+}
+#team-part .team-top h3{
+    color: var(--Text, #222);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.8px; /* 130% */
+    letter-spacing: -0.32px;
+    text-transform: uppercase;
+}
+#team-part .team-top h2{
+    max-width: 480px;
+    color: var(--Text, #222);
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115%; /* 64.4px */
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+#team-part .team-top strong{
+    color: var(--2nd-text-color, #A29A9A);
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+#team-part .team-bottom {
+    display: flex;
+    align-items: center;
+    gap: 147px;
+    margin-left: 235px;
+    padding-top: 64px;
+}
+#team-part .team-bottom .team-botom-left{
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+#team-part .team-bottom .team-botom-left .star{
+    width: 21px;
+    height: 21px;
+    fill: var(--primary, #FF4E10);
+    animation: spin 6s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#team-part .team-bottom .team-botom-left p{
+    max-width: 365px;
+    color: var(--Para, #555);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: -1px;
+    padding-top: 20px;
+}
+#team-part .team-bottom .team-botom-left .team-btn{
+    display: flex;
+    justify-content: start;
+    padding-top: 32px;
+    align-items: center;
+    gap: 16px;
+}
+#team-part .team-bottom .team-botom-left .team-btn .team-btn-left{
+    display: flex;
+    padding: 16px;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    background: var(--Text, #222);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(47px);
+    transition: all linear .3s;
+}
+#team-part .team-bottom .team-botom-left .team-btn .team-btn-right{
+    display: flex;
+    padding: 16px;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    background: var(--Text, #222);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(47px);
+    transition: all linear .3s;
+}
+#team-part .team-bottom .team-botom-left .team-btn .team-btn-left{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    transition: all linear .3s;
+}
+#team-part .team-bottom .team-botom-left .team-btn .team-btn-right{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    transition: all linear .3s;
+}
+#team-part .team-bottom .team-botom-left .team-btn .team-btn-right:hover{
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: var(--primary, #FF4E10);
+    backdrop-filter: blur(47px);
+    cursor: pointer;
+}
+#team-part .team-bottom .team-botom-left .team-btn .team-btn-left:hover{
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: var(--primary, #FF4E10);
+    backdrop-filter: blur(47px);
+    cursor: pointer;
+}
+
+#team-part .team-bottom .team-botom-right .team-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    padding-left: 170px;
+} 
+#team-part .team-bottom .team-botom-right .team-images .team-img1{
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+#team-part .team-bottom .team-botom-right .team-images .team-img2{
+   position: relative;
+} 
+#team-part .team-bottom .team-botom-right .team-images .team-img2 .hello{
+    width: 425px;
+    height: 482px;
+    
+} 
+#team-part .team-bottom .team-botom-right .team-images .team-img3{
+    position: absolute;
+    bottom: 0;
+    right: -170px;
+} 
+#team-part .team-bottom .team-botom-right .team-images .team-img2 .arrow {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -17px;
+    right: -17px;
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#team-part .team-bottom .team-botom-right .team-images .team-img2:hover .team-overlay{
+   background: #FFF;
+}
+#team-part .team-bottom .team-botom-right .team-images .team-img2:hover h5{
+   color: var(--Text, #222);
+}
+#team-part .team-bottom .team-botom-right .team-images .team-img2:hover p{
+   color: var(--Text, #555);
+}
+#team-part .team-bottom .team-botom-right .team-images .team-img2:hover .over-right{
+   display: flex;
+}
+#team-part .team-bottom .team-images .team-img2 .team-overlay {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: transparent;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    transition: all linear .3s;
+}
+#team-part .team-bottom .team-img2 .team-overlay .over-left h5{
+    color: transparent;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105%; 
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    transition: all linear .3s;
+}
+#team-part .team-bottom .team-img2 .team-overlay .over-left p{
+    color: transparent;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+    letter-spacing: -1px;
+    transition: all linear .3s;
+}
+
+#team-part .team-bottom .team-img2 .team-overlay .over-right{
+    display: none;
+    transition: all linear .3s;
+}
+
+
+
+
+
+
 
 
 
