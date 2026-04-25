@@ -20,38 +20,7 @@ a{
     padding: 0 10px 0 10px;
 }
 
-.about-top h3{
-    color: var(--Text, #222);
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20.8px;
-    letter-spacing: -0.32px;
-    text-transform: uppercase;
-}
-.about-top h2{
-    color: #222;
-    font-family: Inter;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 105%;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    width: 660px;
-    word-spacing: 19px;
-}
- .about-top h2 strong{
-    color: #5F5F5F;
-    font-family: Inter;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 105%;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-}
+
 /* ===================================================== */
 
 .nav-img1 img{
@@ -478,7 +447,38 @@ nav{
     align-items: center;
     gap: 144px;
 }
-
+.about-top h3{
+    color: var(--Text, #222);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.8px;
+    letter-spacing: -0.32px;
+    text-transform: uppercase;
+}
+.about-top h2{
+    color: #222;
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105%;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    width: 660px;
+    word-spacing: 19px;
+}
+ .about-top h2 strong{
+    color: #5F5F5F;
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105%;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
 
 #about-part .about-wrapper .about-buttom{
    padding-top: 74px;
@@ -718,7 +718,7 @@ nav{
 #protfolio-part .protfolio-top{
     display: flex;
     align-items: center;
-    padding-left: 140px;
+    justify-content: center;;
 }
 #protfolio-part .protfolio-top .about-top h3{
     padding-bottom: 16px;
@@ -790,10 +790,9 @@ nav{
     display: flex;
     align-items: center;
     gap: 50px;
-    /* position: relative; */
+    justify-content: center;
     border-radius: 8px;
     padding-top: 64px;
-    margin-left: 140px;
 }
 #protfolio-part .protfolio-bottom .card-l{
     display: flex;
@@ -973,11 +972,141 @@ nav{
     background: #FF4E10;
 }
 
+/* =================================================================== */
+#service-part{
+    padding: 100px 62px;
+}
+#service-part .service-wrapper{
+    width: 100%;
 
+}
+#service-part .service-wrapper .service-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 144px;
+    justify-content: center;
+    margin-left: -115px;
+    padding-bottom: 64px;
+}
+#service-part .service-top h3{
+    color: var(--Text, #222);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.8px; /* 130% */
+    letter-spacing: -0.32px;
+    text-transform: uppercase;
+}
+#service-part .service-top h2{
+    max-width: 760px;
+    color: var(--Text, #222);
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115%; /* 64.4px */
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+#service-part .service-top strong{
+    color: var(--2nd-text-color, #A29A9A);
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+#service-part .service-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 324px;
+}
+#service-part .service-bottom .service-left img{
+    width: 404px;
+    height: 443px;
+    aspect-ratio: 114/125;
+    border-radius: 8px;
+}
+#service-part .service-bottom .service-right .right-p{
+    max-width: 385px;
+    color: var(--Para, #555);
+    text-align: right;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: -1px;
+    padding-bottom: 52px;
+}
+#service-part .service-bottom .service-right .service-box{
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: var(--white, #FFF);
+    margin-bottom: 16px;
+}
+#service-part .service-right .service-box .ser-box-left span{
+    color: var(--Text, #222);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.8px; /* 130% */
+    letter-spacing: -0.32px;
+    text-transform: uppercase;
+}
+#service-part .service-right .service-box .light-clr{
+    color: var(--2nd-text-color, #A29A9A);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.8px; /* 130% */
+    letter-spacing: -0.32px;
+    text-transform: uppercase;
+}
+#service-part .service-right .service-box .ser-box-right h6{
+    color: var(--Text, #222);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105%; /* 25.2px */
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 20px;
+}
+#service-part .service-right .service-box .ser-box-right p{
+    max-width: 475px;
+    color: var(--Para, #555);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: -1px;
+    text-align: left;
+}
 
-
-
-
+#service-part .service-right .service-box h6{
+    color: var(--2nd-text-color, #A29A9A);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105%; /* 21px */
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
 
 
 
