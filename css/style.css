@@ -1162,7 +1162,7 @@ nav{
 }
 #team-part .team-bottom .team-botom-left{
     position: relative;
-    bottom: 0;
+    bottom: -135px;
     left: 0;
 }
 #team-part .team-bottom .team-botom-left .star{
