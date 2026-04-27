@@ -1053,7 +1053,7 @@ nav{
     margin-bottom: 16px;
 }
 #service-part .service-right .service-box .ser-box-left span{
-    color: var(--Text, #222);
+    color: var(--2nd-text-color, #A29A9A);
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -1072,8 +1072,21 @@ nav{
     letter-spacing: -0.32px;
     text-transform: uppercase;
 }
-#service-part .service-right .service-box .ser-box-right h6{
+#service-part .service-right .service-box{
+    transition: all linear .3s;
+}
+#service-part .service-right .service-box:hover .ser-box-left span{
+     color: var(--Text, #222);
+}
+#service-part .service-right .service-box:hover .ser-box-right p{
+    display: flex;
+}
+#service-part .service-right .service-box:hover .ser-box-right h6{
+    padding-bottom: 20px;
     color: var(--Text, #222);
+}
+#service-part .service-right .service-box .ser-box-right h6{
+    color: var(--2nd-text-color, #A29A9A);
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
@@ -1082,9 +1095,9 @@ nav{
     letter-spacing: -1px;
     text-transform: uppercase;
     text-align: left;
-    padding-bottom: 20px;
 }
 #service-part .service-right .service-box .ser-box-right p{
+    display: none;
     max-width: 475px;
     color: var(--Para, #555);
     font-family: Inter;
