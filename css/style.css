@@ -1351,9 +1351,10 @@ nav{
 }
 #details-part .details-up {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
-    gap: 200px;
+    gap: 430px;
+    padding-left: 73px;
 }
 #details-part .details-up  .details-left{
     display: flex;
@@ -1407,24 +1408,27 @@ nav{
 #details-part .details-down{
     margin-top: 64px;
 }
-#details-part .details-down .details-card {
+
+
+#details-part .details-down .details-card .extra-up {
     display: flex;
-    width: 78%;
+    width: 85%;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    margin-left: 130px;
+    margin-left: 75px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(75px);
 }
 
-#details-part .details-down .details-card .dcard-left{
+
+#details-part .details-down .details-card .extra-up .dcard-left{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
 }
-#details-part .details-down .details-card span{
+#details-part .details-down .details-card .extra-up span{
     color: var(--white, #FFF);
     font-family: Inter;
     font-size: 24px;
@@ -1432,7 +1436,7 @@ nav{
     font-weight: 500;
     line-height: 120%; 
 }
-#details-part .details-down .details-card h6{
+#details-part .details-down .details-card .extra-up h6{
     color: var(--white, #FFF);
     font-family: Inter;
     font-size: 32px;
@@ -1440,74 +1444,51 @@ nav{
     font-weight: 500;
     line-height: 120%;
 }
-#details-part .details-down .details-card .dcard-right img{
+#details-part .details-down .details-card .extra-up .dcard-right{
+    position: relative;
+}
+#details-part .details-down .details-card .extra-up .dcard-right img{
+    color: var(--white, #FFF);
     width: 30px;
     height: 30px;
+    position: absolute;
+    top: -16px;
+    right: 0;
 }
-#details-part .details-down .details-card .dcard-right .dash{
-    width: 8.25px;
-    height: 0;
-    stroke-width: 2.25px;
-    stroke: var(--white, #FFF);
-}
-#details-part .details-down .details-card1 .extra-up{
- display: flex;
-    width: 78%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    margin-left: 130px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
-    backdrop-filter: blur(75px);
+#details-part .details-down .details-card .extra-up .dcard-right .dash{
+    /* display: none; */
+    width: 35px;
+    color: transparent;
+    position: absolute;
+    top: -16px;
+    right: -6px;
 }
 
-
-#details-part .details-down .details-card1 .extra-up .dcard-left{
+#details-part .details-down .details-card:hover .dcard-right .dash{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+    color: #FFF;
 }
-#details-part .details-down .details-card1 .extra-up span{
-    color: var(--white, #FFF);
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%; 
-}
-#details-part .details-down .details-card1 .extra-up h6{
-    color: var(--white, #FFF);
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-}
-#details-part .details-down .details-card1 .extra-up .dcard-right img{
-    width: 30px;
-    height: 30px;
-}
-#details-part .details-down .details-card1 .extra-up .dcard-right .dash{
-    width: 8.25px;
-    height: 0;
-    stroke-width: 2.25px;
-    stroke: var(--white, #FFF);
+#details-part .details-down .details-card:hover .dcard-right img{
+    display: none;
 }
 #details-part .extra .details-card-left .extra-text{
     max-width: 470px;
 }
-#details-part .details-down .details-card1 .extra {
+#details-part .details-down .details-card:hover .extra{
     display: flex;
-    width: 78%;
+}
+
+#details-part .details-down .details-card .extra {
+    display: none;
+    width: 85%;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    margin-left: 130px;
+    margin-left: 80px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(75px);
 }
-#details-part .details-down .details-card1 .extra-text p{
+#details-part .details-down .details-card .extra-text p{
     color: var(--white, #FFF);
     font-family: Inter;
     font-size: var(--Size-Body-base, 16px);
@@ -1516,7 +1497,7 @@ nav{
     line-height: 150%; /* 24px */
     letter-spacing: 0.128px;
 }
-#details-part .details-down .details-card1 .extra-text h6{
+#details-part .details-down .details-card .extra-text h6{
     color: var(--white, #FFF);
     font-family: Inter;
     font-size: 20px;
@@ -1526,7 +1507,7 @@ nav{
     letter-spacing: -1px;
     padding: 24px 0;
 }
-#details-part .details-down .details-card1 .extra-btns{
+#details-part .details-down .details-card .extra-btns{
     display: flex;
     justify-content: start;
     align-items: center;
@@ -1534,14 +1515,14 @@ nav{
     flex-wrap: wrap;
     gap: 20px;
 }
-#details-part .details-down .details-card1 .extra-btns .extra-btn{
+#details-part .details-down .details-card .extra-btns .extra-btn{
     padding: 8px 24px;
     border-radius: 100px;
     border: 1px solid rgba(255, 255, 255, 0.20);
     background: rgba(255, 255, 255, 0.10);
     backdrop-filter: blur(47.400001525878906px);
 }
-#details-part .details-down .details-card1 .extra-btns .extra-btn a{
+#details-part .details-down .details-card .extra-btns .extra-btn a{
     color: var(--white, #FFF);
     font-family: Inter;
     font-size: 16px;
@@ -1552,7 +1533,7 @@ nav{
     text-transform: capitalize;
 }
 
-#details-part .details-down .details-card1 .extra .details-card-right{
+#details-part .details-down .details-card .extra .details-card-right{
     width: 296px;
     height: 275px;
     border-radius: 8px;
@@ -2027,8 +2008,11 @@ letter-spacing: -0.48px;
     padding: 12px 16px 12px 16px;
     border-radius: 8px;
     background: var(--primary, #FF4E10);
+    transition: all linear .3s;
 }
-
+#action-part .action-wrapper .action-btn:hover{
+    background: #0ebb9e;
+}
 #action-part .action-wrapper .action-btn  .action-dot{
     width: 6px;
     height: 6px;
